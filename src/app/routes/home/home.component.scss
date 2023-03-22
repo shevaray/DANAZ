@@ -1,0 +1,168 @@
+nz-row {
+  width: 100%;
+}
+.container {
+  padding: 0 120px;
+}
+
+.gutter-row {
+  margin-top: 20px;
+}
+
+.page-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 140%;
+  color: #000000;
+  text-align: center;
+}
+
+.page-description-container {
+  display: flex;
+  justify-content: center;
+}
+
+.page-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  color: #000000;
+  width: 38%;
+}
+
+.article-section {
+  margin-top: 40px;
+}
+
+.contact-us-section {
+  margin-top: 40px;
+
+  .contact-us-header {
+    background: #2c3878;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    h2 {
+      color: #ffffff !important;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 170%;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 160%;
+      color: #d9d9d9;
+    }
+
+    .btn {
+      padding: 14px 32px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      color: #333333;
+    }
+  }
+}
+
+.footer {
+  margin-top: 40px;
+
+  h2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 170%;
+    color: #333333;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #333333;
+    vertical-align: middle;
+  }
+
+  .social-media {
+    margin-top: 40px;
+    p {
+      text-align: right;
+    }
+  }
+
+  .social-media-icons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.ant-input-affix-wrapper,
+.ant-input-affix-wrapper:active,
+.ant-input-affix-wrapper::before {
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #141414;
+}
+
+@media (max-width: 375px) {
+  .page-title {
+    font-size: 36px !important;
+  }
+}
+.page-description {
+  font-size: 14px;
+  width: 85%;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 16px;
+  }
+  .page-title {
+    font-size: 42px;
+  }
+  .page-description {
+    font-size: 14px;
+    width: 75%;
+  }
+}
+
+@media (min-width: 767px) {
+  .container {
+    padding: 0 60px;
+  }
+
+  .page-title {
+    font-size: 56px;
+  }
+  .page-description {
+    font-size: 14px;
+    width: 55%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 120px;
+  }
+
+  .page-title {
+    font-size: 56px;
+  }
+  .page-description {
+    font-size: 14px;
+    width: 45%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-title {
+    font-size: 56px;
+  }
+  .page-description {
+    font-size: 14px;
+    width: 36%;
+  }
+}

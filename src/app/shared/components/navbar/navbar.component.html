@@ -1,0 +1,32 @@
+<nz-row class="navbar">
+  <nz-col nzXs="16" nzSm="16" nzMd="8" nzLg="8" nzXs="10">
+    <img [src]="navbarLogo" alt="icon" />
+  </nz-col>
+
+  <nz-col nzXs="8" nzSm="8" nzMd="16" nzLg="16" nzXs="14">
+    <ul class="navbar-links">
+      <li *ngFor="let option of options"><a href="#">{{option.name}}</a></li>
+    </ul>
+
+    <nz-dropdown-menu #menu="nzDropdownMenu">
+      <ul nz-menu>
+        <li nz-menu-item *ngFor="let option of options">
+          <a>{{option.name}}</a>
+        </li>
+      </ul>
+    </nz-dropdown-menu>
+
+    <div class="navbar-links-sm">
+      <span
+        nz-icon
+        nzType="menu"
+        class="menu-icon"
+        nzTheme="outline"
+        nz-dropdown
+        nzTrigger="click"
+        [nzDropdownMenu]="menu"
+        (click)="onSwitchMenuIcon()"
+      ></span>
+    </div>
+  </nz-col>
+</nz-row>
