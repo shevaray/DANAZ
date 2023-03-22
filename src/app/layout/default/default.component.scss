@@ -1,0 +1,27 @@
+.default-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.router-outlet {
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  .default-layout {
+    padding: 8px 16px !important;
+  }
+}
+
+@media (min-width: 767px) {
+  .default-layout {
+    padding: 20px 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .default-layout {
+    padding: 20px 120px;
+  }
+}
