@@ -1,11 +1,17 @@
 <nz-row class="navbar">
-  <nz-col nzXs="16" nzSm="16" nzMd="8" nzLg="8" nzXs="10">
+  <nz-col nzXs="16" nzSm="16" nzMd="8" nzLg="10" nzXs="12">
     <img [src]="navbarLogo" alt="icon" />
   </nz-col>
 
-  <nz-col nzXs="8" nzSm="8" nzMd="16" nzLg="16" nzXs="14">
+  <nz-col nzXs="8" nzSm="8" nzMd="16" nzLg="14" nzXs="12">
     <ul class="navbar-links">
-      <li *ngFor="let option of options"><a href="#">{{option.name}}</a></li>
+      <li
+        *ngFor="let option of options"
+        [ngClass]="option.name !== 'Contact Us' ? '': 'active-link'"
+        class="menu-link-lg"
+      >
+        <a>{{option.name}}</a>
+      </li>
     </ul>
 
     <nz-dropdown-menu #menu="nzDropdownMenu">

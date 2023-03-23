@@ -5,10 +5,6 @@ nz-row {
   padding: 0 120px;
 }
 
-.gutter-row {
-  margin-top: 20px;
-}
-
 .page-title {
   font-style: normal;
   font-weight: 700;
@@ -24,7 +20,7 @@ nz-row {
 }
 
 .page-description {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
   line-height: 160%;
   text-align: center;
@@ -34,6 +30,31 @@ nz-row {
 
 .article-section {
   margin-top: 40px;
+  h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    color: #333333;
+  }
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #9c9c9c;
+  }
+  .site {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.gallery {
+  gap: 10px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .contact-us-section {
@@ -41,8 +62,8 @@ nz-row {
 
   .contact-us-header {
     background: #2c3878;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
     h2 {
       color: #ffffff !important;
       font-weight: 600;
@@ -88,7 +109,7 @@ nz-row {
   .social-media {
     margin-top: 40px;
     p {
-      text-align: right;
+      text-align: left;
     }
   }
 
@@ -106,14 +127,22 @@ nz-row {
   border-bottom: 1px solid #141414;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   .page-title {
-    font-size: 36px !important;
+    font-size: 28px !important;
   }
-}
-.page-description {
-  font-size: 14px;
-  width: 85%;
+  .page-description {
+    font-size: 14px;
+    width: 80% !important;
+  }
+  .footer {
+    .email-label {
+      font-size: 12px !important;
+      img {
+        width: 8px;
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -127,11 +156,35 @@ nz-row {
     font-size: 14px;
     width: 75%;
   }
+
+  .article-section {
+    h2 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .contact-us-section {
+    h2 {
+      font-size: 24px !important;
+    }
+  }
+
+  .footer {
+    h2 {
+      font-size: 22px;
+    }
+    .email-label {
+      font-size: 16px;
+    }
+  }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 767px) and (max-width: 1200px) {
   .container {
-    padding: 0 60px;
+    padding: 0 60px !important;
   }
 
   .page-title {
@@ -141,11 +194,44 @@ nz-row {
     font-size: 14px;
     width: 55%;
   }
+
+  .article-section {
+    h2 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .contact-us-section {
+    h2 {
+      font-size: 22px !important;
+    }
+    p {
+      font-size: 12px !important;
+    }
+    .btn {
+      padding: 12px 20px !important;
+    }
+  }
+
+  .footer {
+    h2 {
+      font-size: 28px;
+    }
+    .email-label {
+      font-size: 12px;
+      img {
+        width: 10px;
+      }
+    }
+  }
 }
 
 @media (min-width: 1024px) {
   .container {
-    padding: 0 120px;
+    padding: 0 120px !important;
   }
 
   .page-title {

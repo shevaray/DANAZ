@@ -24,7 +24,8 @@
         and anywhere. Online learning with us does not interfere with your daily
         life. because learning can be done anytime and anywhere.
       </p>
-      <div>
+      <br />
+      <div class="site">
         <p>July 22 - 2022</p>
         <p>Interior Design - Furniture</p>
       </div>
@@ -52,27 +53,30 @@
 </nz-row>
 
 <!-- GALLARY SECTION -->
-<nz-row class="container">
-  <nz-row class="gutter-row" [nzGutter]="16">
+<nz-row class="container gallery">
+  <nz-row nzJustify="space-between" [nzGutter]="[10,10]">
     <nz-col nzXs="24" nzSm="24" nzMd="12" nzLg="12" nzXl="12" nzXXl="12">
-      <img src="assets/gallery/gallery-img1.svg" alt="" style="width: 100%;" />
+      <div style="display: flex; justify-content: space-between;"></div>
+      <img src="assets/gallery/gallery-img1.svg" alt="" />
     </nz-col>
 
     <nz-col nzXs="24" nzSm="24" nzMd="12" nzLg="12" nzXl="12" nzXXl="12">
-      <img src="assets/gallery/gallery-img2.svg" alt="" style="width: 100%;" />
+      <img src="assets/gallery/gallery-img2.svg" alt="" />
     </nz-col>
   </nz-row>
 
-  <nz-row class="gutter-row">
-    <img src="assets/gallery/gallery-img3.svg" alt="" style="width: 100%;" />
+  <nz-row [nzGutter]="[10,10]">
+    <nz-col nzSpan="24">
+      <img src="assets/gallery/gallery-img3.svg" alt="" />
+    </nz-col>
   </nz-row>
 
-  <nz-row class="gutter-row" [nzGutter]="16">
+  <nz-row nzJustify="space-between" [nzGutter]="[10,10]">
     <nz-col nzXs="24" nzSm="24" nzMd="12" nzLg="12" nzXl="12" nzXXl="12">
-      <img src="assets/gallery/gallery-img4.svg" alt="" style="width: 100%;" />
+      <img src="assets/gallery/gallery-img4.svg" alt="" />
     </nz-col>
     <nz-col nzXs="24" nzSm="24" nzMd="12" nzLg="12" nzXl="12" nzXXl="12">
-      <img src="assets/gallery/gallery-img5.svg" alt="" style="width: 100%;" />
+      <img src="assets/gallery/gallery-img5.svg" alt="" />
     </nz-col>
   </nz-row>
 </nz-row>
@@ -80,13 +84,13 @@
 <!-- CONTACT US SECTION -->
 <nz-row class="contact-us-section">
   <nz-row class="container contact-us-header" nzJustify="space-between">
-    <nz-col nzXs="24" nzSm="24" nzMd="16" nzLg="16" nzXl="16" nzXXl="16">
+    <nz-col nzXs="24" nzSm="24" nzMd="14" nzLg="14" nzXl="16" nzXXl="16">
       <h2>
         let's discuss making your interior <br />
         like a dream place!
       </h2>
     </nz-col>
-    <nz-col nzXs="24" nzSm="24" nzMd="8" nzLg="8" nzXl="8" nzXXl="8">
+    <nz-col nzXs="24" nzSm="24" nzMd="10" nzLg="10" nzXl="8" nzXXl="8">
       <p>Contact us below to work together to build your amazing interior</p>
       <button class="btn">Contact Us</button>
     </nz-col>
@@ -95,7 +99,7 @@
 
 <!-- FOOTER SECTION -->
 <nz-row nzJustify="space-between" class="container footer">
-  <nz-col nzXs="24" nzSm="24" nzMd="16" nzLg="16" nzXl="16" nzXXl="16">
+  <nz-col nzXs="24" nzSm="24" nzMd="14" nzLg="14" nzXl="16" nzXXl="16">
     <img src="assets/navbar/navbar-logo.svg" alt="" />
     <h2>
       One of the best furniture <br />
@@ -103,11 +107,11 @@
     </h2>
   </nz-col>
 
-  <nz-col nzXs="24" nzSm="24" nzMd="8" nzLg="8" nzXl="8" nzXXl="8">
+  <nz-col nzXs="24" nzSm="24" nzMd="10" nzLg="10" nzXl="8" nzXXl="8">
     <div>
-      <p>
-        <span><img src="assets/dot.svg" alt="" /></span>
-        Enter your email to get the laterst news
+      <p class="email-label">
+        <span><img src="assets/dot.svg" alt="" /></span>&nbsp;
+        <span>Enter your email to get the latest news</span>
       </p>
 
       <nz-input-group [nzSuffix]="suffixTemplate">
@@ -119,14 +123,16 @@
     </div>
 
     <nz-row nzJustify="end" class="social-media">
-      <p nz-col nzSpan="24">Follow us On</p>
+      <nz-col nzXs="12" nzSm="12" nzMd="12" nzLg="10">
+        <p class="follow-us">Follow us On</p>
 
-      <div nz-col nzSpan="8" class="social-media-icons">
-        <img src="assets/social-media/facebook.svg" alt="" />
-        <img src="assets/social-media/instagram.svg" alt="" />
-        <img src="assets/social-media/tiktok.svg" alt="" />
-        <img src="assets/social-media/youtube.svg" alt="" />
-      </div>
+        <div class="social-media-icons">
+          <img src="assets/social-media/facebook.svg" alt="" />
+          <img src="assets/social-media/instagram.svg" alt="" />
+          <img src="assets/social-media/tiktok.svg" alt="" />
+          <img src="assets/social-media/youtube.svg" alt="" />
+        </div>
+      </nz-col>
     </nz-row>
   </nz-col>
 </nz-row>
